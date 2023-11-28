@@ -1,0 +1,231 @@
+
+h1{
+  font-size: 2rem;
+}
+p{
+  font-size: 1.75rem;
+}
+
+#root{
+  font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFDEB4;/*#eea1ef*/
+    display: flex;/*to make sure footer stay at the bottom*/
+    flex-direction: column;/*to make sure footer stay at the bottom*/
+    line-height: 1.6; /*Improving line height for readability*/
+    /* padding: 20px; */
+    min-height: 100vh;
+    position: relative;
+
+  }
+
+/*-----------HEADER-------------------------------- */
+.header_banner {
+  background-color: #FFB4B4;
+  padding: 100px;
+  text-align: center;
+  font-size: 65px;
+  color: black;
+}
+/* hover on link */
+a:hover{
+  color: blueviolet;
+}
+a:hover > h1{
+  color: blueviolet;
+}
+
+button{
+  background-color: #FFB4B4;
+  margin: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 8px 16px;
+  border: 4px solid black;
+
+}
+
+button:hover {
+  background-color: #FDF7C3 ;
+}
+
+/*------------HOMEPAGE--------------------------------*/
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: #FDF7C3;
+  }
+  
+
+.albumsFlexcontainer {
+  display:flex;
+  flex-wrap:wrap;
+  margin-top: 20px;
+  padding: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 2.5rem;    /* Footer height */
+
+}  
+
+  /* Style the list inside the menu */
+  ol {
+    list-style-type: none;
+    padding: 0px;
+  }
+  .navlink{
+    /* style={{display: 'block',marginRight: '25px',textDecoration:'none', color:'black'}} */
+    display: block;
+    text-align: right;
+    margin-right: 25px;
+    text-decoration: none;
+    color: black;
+    padding: 0px;
+    font-size: 15px;
+  }
+
+/*------------ABOUT--------------------------*/
+.about_data{
+  text-align: center;
+  margin: 20px;
+}
+
+/*------------FOOTER--------------------------*/
+.footer-container {
+  background-color: #B2A4FF;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  margin-top: auto;/*to make sure footer stay at the bottom*/
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.btnFooter{
+  background-color: #FFB4B4;
+  margin: 5px;
+  font-size: 30px;
+  border-radius: 15px;
+  padding: 8px 16px;
+  border: 4px solid black;
+}
+
+.btnFooter:hover {
+  background-color: #FDF7C3 ;
+}
+
+/*-------------------MEDIA_SCREEN----------------------------/*
+ /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+ /*For small devices*/
+@media screen and (max-width: 350px){
+  .container{
+      margin-left: 1rem;
+      margin-right: 1rem;
+  }
+  section{
+      grid-template-columns: .25fr 3fr;
+  }
+
+  .about_container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 5px;
+    }
+
+}
+
+/*For medium devices*/
+@media screen and (min-width: 568px){
+  .home-content{
+      grid-template-columns: max-content 1fr 1fr;
+  }
+  .albumsFlexcontainer{
+      grid-column: initial;
+  }
+  .about_container
+  .footer-container{
+      grid-template-columns: repeat(2,1fr);
+  }
+}
+
+ @media screen and (min-width:768px){
+  .container{
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  body{
+      margin: 0;
+  }
+
+  .section{
+      padding: 6rem 0 2rem;
+  }
+  
+  .header{
+      top:0;
+      bottom: initial;
+  }
+
+  .header,
+  .footer{
+      padding: 0 1rem;
+  }
+
+  .home_container{
+      row-gap: 5rem;
+  }
+
+  .home-content{
+      padding-top: 5.5rem;
+      column-gap: 2rem;
+  }
+
+  .about_container{
+      column-gap: 5rem;
+  }
+
+  .about_data{
+      text-align: initial;
+  }
+
+  /* .portfolio-img{
+      width: 320px;
+  }
+  .portfolio-content{
+      align-items: center;
+  } */
+
+  .footer-container{
+      grid-template-columns: repeat(3,1fr); /*1/3 evenly */
+  }
+
+}
+
+/*For large devices*/
+@media screen and (min-width:1024px) {
+.header,
+.main,
+.footer-container{
+  padding: 0;
+}
+
+
+.contact_form{
+  width: 460px;
+}
+
+.contact-inputs{
+  grid-template-columns: repeat(2, 1fr);
+}
+}
