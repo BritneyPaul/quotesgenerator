@@ -99,6 +99,7 @@ button:hover {
   color: black;
   /* margin-top: auto;to make sure footer stay at the bottom */
   position: absolute;
+  /* bottom: 0px; */
   width: 100%;
 }
 
