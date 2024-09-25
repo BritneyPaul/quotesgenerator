@@ -33,7 +33,7 @@ function Speaknow(){
             <button onClick={handleSpeaknowClick}>
                 Generate quote
             </button>
-            <p>{speaknowQuote}</p>
+            <p style={{marginLeft:'10px'}}>{speaknowQuote}</p>
         </div>
     );
 }

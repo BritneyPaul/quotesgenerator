@@ -8,7 +8,7 @@ function Reputation(){
         "I'm perfectly fine I live on my own I made my mind I'm better off being alone",
         "Is this the end of all the endings?",
         "Say my name and everything just stops",
-        "There's gliiter on the floor outside the lobby",
+        "There's gliter on the floor outside the lobby",
         "Hold on to the memories they would hold on to you",
         "So it goes...!"
     ];
@@ -32,7 +32,7 @@ function Reputation(){
             <button onClick={handleReputationclick}>
                 Generate quote
             </button>
-            <p>{reputationQuote}</p>
+            <p style={{marginLeft:'10px'}}>{reputationQuote}</p>
         </div>
     );
 }

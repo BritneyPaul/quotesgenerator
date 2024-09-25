@@ -12,7 +12,7 @@ function Folklore(){
         "I love you to the moon and saturn",
         "I had a marvelous time ruining everything",
         "Would it be enough if I can never give you peace",
-        "If I'm dead to you then ehy are you at the wake",
+        "If I'm dead to you then why are you at the wake",
         "Look at how my tears richochet",
         "I can go anywhere I want... Just not home",
     ];

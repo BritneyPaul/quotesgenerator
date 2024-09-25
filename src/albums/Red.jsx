@@ -7,7 +7,7 @@ function Red(){
     const redQuotes = [
         "Fuck the patriarchy",
         "How can a person know everything at 18 but nothing at 22",
-        "Would you still want me when i'm nothing new",
+        "Would you still want me when I'm nothing new",
         "Alls well that ends well",
         "Distance, timing, breakdown crying, silence, the train runs off it's tracks",
         "Could you just try to listen!"
@@ -32,7 +32,7 @@ function Red(){
             <button onClick={handleRedClick}>
                 Generate quote
             </button>
-            <p>{redQuote}</p>
+            <p style={{marginLeft:'10px'}}>{redQuote}</p>
         </div>
     );
 }

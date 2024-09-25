@@ -217,12 +217,13 @@ button:hover {
 .main,
 .footer-container{
   padding: 0;
+  bottom: 0;
 }
-
 
 .contact_form{
   width: 460px;
 }
+
 
 .contact-inputs{
   grid-template-columns: repeat(2, 1fr);

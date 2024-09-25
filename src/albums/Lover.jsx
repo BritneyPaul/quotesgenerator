@@ -4,7 +4,6 @@ function Lover(){
     const[loverQuote,setLoverQuote] = useState('');
 
     const loverQuotes = [
-        "All of the girls you'v eloved before, made you the one i've fallen for",
         "Every dead end street led you straight to me",
         "I once believe love would be black & white but it's golden",
         "We might just get away with this...",
@@ -32,7 +31,7 @@ function Lover(){
             <button onClick={handleLoverClick}>
                 Generate quote
             </button>
-            <p>{loverQuote}</p>
+            <p style={{marginLeft:'10px'}}>{loverQuote}</p>
         </div>
     );
 }

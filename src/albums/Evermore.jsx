@@ -33,7 +33,7 @@ function Evermore(){
             <button onClick={handleEvermoreClick}>
                 Generate quote
             </button>
-            <p>{evermoreQuote}</p>
+            <p style={{marginLeft:'10px'}}>{evermoreQuote}</p>
         </div>
     );
 }

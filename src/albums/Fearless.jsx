@@ -28,7 +28,7 @@ const Fearless = () => {
             <button id="fearlessBtn" type="button" onClick={handleFearlessClick}>
                 Generate quote
             </button>
-            <p id="fearQuotes">{fearlessQuote}</p>
+            <p style={{marginLeft:'10px'}} id="fearQuotes">{fearlessQuote}</p>
         </div>
     );
 };

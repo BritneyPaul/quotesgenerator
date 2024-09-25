@@ -31,7 +31,7 @@ function NineteenEightyNine(){
             <button onClick={handleNineteenEightyNineClick}>
                 Generate quote
             </button>
-            <p>{nineteenEightyNineQuote}</p>
+            <p style={{marginLeft:'10px'}}>{nineteenEightyNineQuote}</p>
         </div>
     );
 }

@@ -29,7 +29,7 @@ function Midnights(){
             <button onClick={handleMidnightsClick}>
                 Generate quote
             </button>
-            <p id="midnightquote">{midnightsQuote}</p>
+            <p style={{marginLeft:'10px'}} id="midnightquote">{midnightsQuote}</p>
         </div>
     );
 }

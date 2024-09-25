@@ -30,7 +30,7 @@ function Debut() {
             <button id="debutBtn" type="button" onClick={handleDebutClick}>
                 Generate quote
             </button>
-            <p id="debQuotes">{debutQuote}</p>
+            <p style={{marginLeft:'10px'}} id="debQuotes">{debutQuote}</p>
         </div>
 
     );
